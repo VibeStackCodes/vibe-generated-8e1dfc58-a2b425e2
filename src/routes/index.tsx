@@ -1,5 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from '@/App'
+import { HomePage } from '@/pages/home'
+import { InboxPage } from '@/pages/inbox'
 
 /**
  * Get basename dynamically from window location or environment
@@ -50,11 +52,11 @@ export const router = createBrowserRouter(
       children: [
         {
           index: true,
-          element: (
-            <div className="flex min-h-screen items-center justify-center">
-              <p className="text-muted-foreground">Start building your app</p>
-            </div>
-          ),
+          element: <HomePage />,
+        },
+        {
+          path: 'inbox',
+          element: <InboxPage />,
         },
       ],
     },

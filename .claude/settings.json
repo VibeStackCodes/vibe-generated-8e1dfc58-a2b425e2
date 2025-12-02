@@ -1,0 +1,13 @@
+{
+  "projectId": "8e1dfc58-92e0-4099-9712-a057c1679caa",
+  "webhookUrl": "https://great-socks-count.loca.lt/api/claude-code/progress",
+  "hooks": {
+    "enabled": true,
+    "events": [
+      "SessionStart",
+      "SessionEnd",
+      "PreToolUse",
+      "PostToolUse"
+    ]
+  }
+}
